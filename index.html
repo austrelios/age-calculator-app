@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+    rel="stylesheet">
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="main_container">
+    <div class="date_input_container">
+
+      <form>
+        <div class="date_input_container">
+          <div class="input_container">
+            <label id="day_input_label" for="day_input">DAY</label>
+            <input id="day_input" type="number" maxlength="2" size="2" placeholder="DD" min="1" max="31" required />
+            <small class="day_error"></small>
+          </div>
+          <div class="input_container">
+            <label id="month_input_label" for="month_input">MONTH</label>
+            <input id="month_input" type="number" maxlength="2" size="2" placeholder="MM" min="1" max="12" required />
+            <small class="month_error"></small>
+          </div>
+          <div class="input_container">
+            <label id="year_input_label" for="year_input">YEAR</label>
+            <input id="year_input" type="number" maxlength="4" size="4" placeholder="YYYY" min="1900" max="2023"
+              required />
+            <small class="year_error"></small>
+          </div>
+        </div>
+
+    </div>
+
+    <div class="submit_container">
+      <hr>
+      <button class="submit_button" type="button"><img class="submit_button_image" src="./assets/images/icon-arrow.svg" alt="arrow"></button>
+    </div>
+    </form>
+
+
+    <div class="results_container">
+      <h1><span id="year_output">--</span> years</h1>
+      <h1><span id="month_output">--</span> months</h1>
+      <h1><span id="day_output">--</span> days</h1>
+
+
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
