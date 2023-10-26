@@ -45,14 +45,20 @@ function calculate_Duration() {
 
     if (!day_in.value) {
         day_error.innerHTML = "This field is required";
+        error_day.classList.add('label_input_error');
+        day_in.classList.add('border_input_error');
         validation_Passed = false;
     }
     if (!month_in.value) {
         month_error.innerHTML = "This field is required";
+        error_month.classList.add('label_input_error');
+        month_in.classList.add('border_input_error');
         validation_Passed = false;
     }
     if (!year_in.value) {
         year_error.innerHTML = "This field is required";
+        error_year.classList.add('label_input_error');
+        year_in.classList.add('border_input_error');
         validation_Passed = false;
     }
 
